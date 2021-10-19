@@ -7,7 +7,6 @@ let Student = require('../model/Student');
 
 // Add Student
 studentRoute.route('/add-student').post((req, res, next) => {
-    debugger
   Student.create(req.body, (error, data) => {
     if (error) {
       return next(error)
@@ -19,7 +18,6 @@ studentRoute.route('/add-student').post((req, res, next) => {
 
 // Get all student
 studentRoute.route('/').get((req, res) => {
-    debugger
   Student.find((error, data) => {
     if (error) {
       return next(error)
@@ -31,7 +29,6 @@ studentRoute.route('/').get((req, res) => {
 
 // Get single student
 studentRoute.route('/read-student/:id').get((req, res) => {
-    debugger
   Student.findById(req.params.id, (error, data) => {
     if (error) {
       return next(error)

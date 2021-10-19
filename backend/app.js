@@ -18,7 +18,6 @@ useUnifiedTopology: true
     console.log('Could not connected to database : ' + error)
   }
 )
-debugger
 
 // Set up express js port
 const studentRoute = require('./routes/student.route')
@@ -35,18 +34,16 @@ app.use(express.static(path.join(__dirname, 'dist/angular8-meanstack-angular-mat
 
 
 // RESTful API root
-app.use('/api', studentRoute)
+app.use('/api/student', studentRoute)
 
 // PORT
 const port = process.env.PORT || 8000;
-debugger
 app.listen(port, () => {
   console.log('Connected to port ' + port)
 })
 
 // Find 404 and hand over to error handler
 app.use((req, res, next) => {
-    debugger
   next(createError(404));
 });
 

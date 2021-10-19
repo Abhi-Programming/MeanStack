@@ -26,12 +26,11 @@ export class ApiService {
 
   // Get all students
   GetStudents() {
-    return this.http.get(`${this.endpoint}`);
+    return this.http.get(`${this.endpoint}/student`);
   }
 
   // Get student
   GetStudent(id:any): Observable<any> {
-    debugger
     let API_URL = `${this.endpoint}/read-student/${id}`;
     return this.http.get(API_URL, { headers: this.headers })
       .pipe(
