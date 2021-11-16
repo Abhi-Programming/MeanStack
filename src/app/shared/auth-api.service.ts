@@ -4,61 +4,29 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { signUp } from './interfaces/http';
 
 @Injectable({
   providedIn: 'root'
 })
+export class AuthApiService {
 
-export class ApiService {
-
+  
   endpoint: string = environment.frontendUrl;
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
 
-  // Add student
-  AddStudent(data: Student): Observable<any> {
-    let API_URL = `${this.endpoint}/add-student`;
+   // Add student
+   signUp(data: signUp): Observable<any> {
+     debugger
+    let API_URL = `${this.endpoint}/auth/signup`;
     return this.http.post(API_URL, data)  
       .pipe(
         catchError(this.errorMgmt)
       )
   }
 
-  // Get all students
-  GetStudents() {
-    return this.http.get(`${this.endpoint}/student`);
-  }
-
-  // Get student
-  GetStudent(id:any): Observable<any> {
-    let API_URL = `${this.endpoint}/read-student/${id}`;
-    return this.http.get(API_URL, { headers: this.headers })
-      .pipe(
-        map((res: any) => {
-          return res || {}
-        }),
-        catchError(this.errorMgmt)
-      )
-  }
-
-  // Update student
-  UpdateStudent(id:any, data:any): Observable<any> {
-    let API_URL = `${this.endpoint}/update-student/${id}`;
-    return this.http.put(API_URL, data, { headers: this.headers })
-      .pipe(
-        catchError(this.errorMgmt)
-      )
-  }
-
-  // Delete student
-  DeleteStudent(id:any): Observable<any> {
-    var API_URL = `${this.endpoint}/delete-student/${id}`;
-    return this.http.delete(API_URL)
-      .pipe(
-        catchError(this.errorMgmt)
-      )
-  }
 
   // Error handling 
   errorMgmt(error: HttpErrorResponse) {

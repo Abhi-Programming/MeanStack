@@ -20,7 +20,9 @@ useUnifiedTopology: true
 )
 
 // Set up express js port
-const studentRoute = require('./routes/student.route')
+// const studentRoute = require('./routes/student.route')
+// const authRoutes = require('./routes/auth.routes')
+// const userRoutes = require('./routes/user.routes')
 
 const app = express();
 app.use(bodyParser.json());
@@ -34,7 +36,10 @@ app.use(express.static(path.join(__dirname, 'dist/angular8-meanstack-angular-mat
 
 
 // RESTful API root
-app.use('/api/student', studentRoute)
+// app.use('/api/student', studentRoute);
+//  app.use('/api/auth', authRoutes);
+//  app.use('/api/test/all', userRoutes);
+
 
 // PORT
 const port = process.env.PORT || 8000;

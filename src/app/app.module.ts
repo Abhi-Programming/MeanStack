@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ApiService } from './shared/api.service';
+import { ContentComponent } from './components/content/content.component';
+import { NoRecordFoundComponent } from './components/no-record-found/no-record-found.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { ApiService } from './shared/api.service';
     AppComponent,
     AddStudentComponent,
     EditStudentComponent,
-    StudentsListComponent
+    StudentsListComponent,
+    ContentComponent,
+    NoRecordFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { ApiService } from './shared/api.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [ApiService],
+  providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

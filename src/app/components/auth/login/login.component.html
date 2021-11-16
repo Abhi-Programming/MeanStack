@@ -1,0 +1,136 @@
+<div class="styleDiv"></div> 
+
+<div *ngIf="!signIn" class="container  d-flex justify-content-center align-items-center">
+
+    <div class="card center p-5">
+
+        <div class="text-center mb-1 mt-1">
+            <h2>Sign Up</h2>
+        </div>
+        <!-- Form -->
+        <div class="inner-wrapper pb-1">
+            <form [formGroup]="SignUpForm" (ngSubmit)="submitSignUpForm()">
+                <!-- Left block -->
+                <mat-card>
+                    <div class="controlers-wrapper">
+                        <!-- Name -->
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Username" formControlName="user_name">
+                            <mat-error *ngIf="handleError('user_name', 'required')">
+                                You must provide name
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- Email -->
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="User Email" formControlName="user_email">
+                            <mat-error *ngIf="handleError('user_email', 'required')">
+                                You must provide email
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="User Number" formControlName="user_phone">
+                            <mat-error *ngIf="handleError('user_phone', 'required')">
+                                You must provide number
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </mat-card>
+
+                <!-- Right block -->
+                <mat-card>
+                    <div class="controlers-wrapper">
+                        <!-- Add subjects -->
+
+                        <!-- Date of birth -->
+                        <mat-form-field>
+                            <input matInput readonly [matDatepicker]="picker" placeholder="Date of birth"
+                                formControlName="dob" (dateChange)="formatDate($event)">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                            <mat-error *ngIf="handleError('dob', 'required')">
+                                Date of birth is required
+                            </mat-error>
+                        </mat-form-field>
+
+                        <!-- Gender -->
+                        <div class="misc-bottom-padding mt-4">
+                            <mat-label>Gender:</mat-label>
+                            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                                <mat-radio-button value="Male">Male</mat-radio-button>
+                                <mat-radio-button value="Female">Female</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+
+                        <mat-form-field class="example-full-width mt-2">
+                            <input matInput placeholder="User Password" formControlName="password">
+                            <mat-error *ngIf="handleError('password', 'required')">
+                                You must provide number
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+
+
+                </mat-card>
+            </form>
+        </div>
+
+        <mat-card class="text-center">
+            <div class="full-wrapper button-wrapper">
+                <div class="button-wrapper">
+                    <button mat-raised-button color="primary" (click)="submitSignUpForm()">Let's Go...</button>
+                    <button mat-raised-button (click) = "signinup()">Sign In</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
+
+<div *ngIf="signIn" class="container  d-flex justify-content-center align-items-center">
+
+    <div class="card center p-5">
+
+        <div class="text-center mb-1 mt-1">
+            <h2>Sign In</h2>
+        </div>
+        <!-- Form -->
+        <div class="inner-wrapper text-center pb-1">
+            <form [formGroup]="SignInForm" (ngSubmit)="submitSignUpForm()">
+                <!-- Left block -->
+                <mat-card class="w-75">
+                    <div class="controlers-wrapper">
+                        <!-- Name -->
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Username" formControlName="user_name">
+                            <mat-error *ngIf="handleError('user_name', 'required')">
+                                You must provide name
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Password" formControlName="password">
+                            <mat-error *ngIf="handleError('password', 'required')">
+                                You must provide password
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                </mat-card>
+
+
+            </form>
+        </div>
+
+        <mat-card class="text-center">
+            <div class="full-wrapper button-wrapper">
+                <div class="button-wrapper">
+                    <button mat-raised-button color="primary">Let's Go...</button>
+                    <button mat-raised-button (click)="signinup()">Sign Up</button>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>

@@ -38,3 +38,8 @@ body .push-right{margin-right:10px;}
 @media (max-width:767px){.nav-tool-items{margin-right:0;}
  .hamburger{visibility:visible !important;}
 }
+
+
+.card{
+    box-shadow: rgb(98 168 241 / 57%) 0px 30px 90px;
+}
