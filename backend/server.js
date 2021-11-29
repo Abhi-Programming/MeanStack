@@ -19,11 +19,6 @@ useUnifiedTopology: true
   }
 )
 
-// Set up express js port
-// const studentRoute = require('./routes/student.route')
-// const authRoutes = require('./routes/auth.routes')
-// const userRoutes = require('./routes/user.routes')
-
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -31,15 +26,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cors());
 
+// [ Global Setup ]
+require('./config/globals');
+
 // Setting up static directory
 app.use(express.static(path.join(__dirname, 'dist/angular8-meanstack-angular-material')));
-
-
-// RESTful API root
-// app.use('/api/student', studentRoute);
-//  app.use('/api/auth', authRoutes);
-//  app.use('/api/test/all', userRoutes);
-
 
 // PORT
 const port = process.env.PORT || 8000;
@@ -47,19 +38,21 @@ app.listen(port, () => {
   console.log('Connected to port ' + port)
 })
 
+// ------------------------ [ Response Handler ] ------------------------
+app.use((req, res, next) => {
+  const ResponseHandler = require('./config/responseHandler');
+  res.handler = new ResponseHandler(req, res);
+  next();
+});
+
+// ------------------------ [ Routes ] ------------------------
+const appRoutes = require('./routes');
+appRoutes(app);
+
 // Find 404 and hand over to error handler
 app.use((req, res, next) => {
   next(createError(404));
 });
-
-// Index Route
-app.get('/', (req, res) => {
-  res.send('invaild endpoint');
-});
-
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'dist/angular8-meanstack-angular-material/index.html'));
-// });
 
 // error handler
 app.use(function (err, req, res, next) {

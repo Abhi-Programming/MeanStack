@@ -1,0 +1,314 @@
+error: Nov-29-2021 14:34:20: 	Error in Index [ route ]:Error - Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js - Error: Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:793:17)
+    at Function.Module._load (internal/modules/cjs/loader.js:686:27)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:27)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:49:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14) - Error: Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+error: Nov-29-2021 14:38:47: 	Error in Index [ route ]:Error - Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js - Error: Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:793:17)
+    at Function.Module._load (internal/modules/cjs/loader.js:686:27)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:27)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:57:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14) - Error: Cannot find module './auth.routes'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+error: Nov-29-2021 16:46:59: 	Error in Index [ route ]:TypeError - require(...) is not a constructor - TypeError: require(...) is not a constructor
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4:27)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30) - TypeError: require(...) is not a constructor
+error: Nov-29-2021 17:00:41: 	Error in Index [ route ]:Error - Route.get() requires a callback function but got a [object Undefined] - Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:31:14)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29) - Error: Route.get() requires a callback function but got a [object Undefined]
+error: Nov-29-2021 17:02:16: 	Error in Index [ route ]:Error - Route.get() requires a callback function but got a [object Undefined] - Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:31:14)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29) - Error: Route.get() requires a callback function but got a [object Undefined]
+error: Nov-29-2021 17:02:42: 	Error in Index [ route ]:Error - Route.get() requires a callback function but got a [object Undefined] - Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:31:14)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29) - Error: Route.get() requires a callback function but got a [object Undefined]
+error: Nov-29-2021 17:07:06: 	Error in Index [ route ]:Error - Route.get() requires a callback function but got a [object Undefined] - Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:202:15)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:31:25)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1) - Error: Route.get() requires a callback function but got a [object Undefined]
+error: Nov-29-2021 17:07:36: 	Error in Index [ route ]:Error - Route.get() requires a callback function but got a [object Undefined] - Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:202:15)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:31:25)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1) - Error: Route.get() requires a callback function but got a [object Undefined]
+error: Nov-29-2021 17:08:08: 	Error in Categories Controller [ getCategories ]:ReferenceError - Student is not defined - ReferenceError: Student is not defined
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:13)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - ReferenceError: Student is not defined
+error: Nov-29-2021 17:08:21: 	Error in Categories Controller [ getCategories ]:ReferenceError - Student is not defined - ReferenceError: Student is not defined
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:13)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - ReferenceError: Student is not defined
+error: Nov-29-2021 17:08:23: 	Error in Categories Controller [ getCategories ]:ReferenceError - Student is not defined - ReferenceError: Student is not defined
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:13)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - ReferenceError: Student is not defined
+error: Nov-29-2021 17:09:38: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:09:41: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:09:42: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:09:43: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:10:13: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:11:51: 	Error in Categories Controller [ getCategories ]:TypeError - Student.find is not a function - TypeError: Student.find is not a function
+    at getStudent (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:9:21)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/node_modules/express/lib/router/index.js:47:12) - TypeError: Student.find is not a function
+error: Nov-29-2021 17:19:44: 	Error in Index [ route ]:Error - Cannot find module '../controllers/studentController'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js - Error: Cannot find module '../controllers/studentController'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:793:17)
+    at Function.Module._load (internal/modules/cjs/loader.js:686:27)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4:32)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19) - Error: Cannot find module '../controllers/studentController'
+Require stack:
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js
+- /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js
+error: Nov-29-2021 17:26:14: 	Error in Index [ route ]:SyntaxError - Unexpected token 'export' - /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/controllers/student.js:17
+export default studentController;
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4:32)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32) - SyntaxError: Unexpected token 'export'
+error: Nov-29-2021 17:27:36: 	Error in Index [ route ]:SyntaxError - Cannot use import statement outside a module - /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4
+import { studentController } from '../controllers/student'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10) - SyntaxError: Cannot use import statement outside a module
+error: Nov-29-2021 17:27:53: 	Error in Index [ route ]:SyntaxError - Cannot use import statement outside a module - /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4
+import  studentController  from '../controllers/student'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10) - SyntaxError: Cannot use import statement outside a module
+error: Nov-29-2021 17:29:49: 	Error in Index [ route ]:SyntaxError - Cannot use import statement outside a module - /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4
+import  studentController  from '../controllers/student'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10) - SyntaxError: Cannot use import statement outside a module
+error: Nov-29-2021 17:30:00: 	Error in Index [ route ]:SyntaxError - Cannot use import statement outside a module - /home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:5
+import { studentController } from '../controllers/student'
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10) - SyntaxError: Cannot use import statement outside a module
+error: Nov-29-2021 17:30:35: 	Error in Index [ route ]:TypeError - require(...).default is not a constructor - TypeError: require(...).default is not a constructor
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/student.route.js:4:27)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at module.exports (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/routes/index.js:12:29)
+    at Object.<anonymous> (/home/abhishek/Desktop/MEAN STACK/angular8-meanstack-angular-material/backend/server.js:50:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30) - TypeError: require(...).default is not a constructor

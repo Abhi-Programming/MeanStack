@@ -15,7 +15,7 @@ export class ApiService {
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
-
+  
   // Add student
   AddStudent(data: Student): Observable<any> {
     let API_URL = `${this.endpoint}/add-student`;
@@ -27,7 +27,7 @@ export class ApiService {
 
   // Get all students
   GetStudents() {
-    return this.http.get(`${this.endpoint}/student`);
+    return this.http.get(`${this.endpoint}`);
   }
 
   // Get student

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const studentRoute = express.Router();
-
+const studentController = new (require('../controllers/student'))();
 // Student model
 let Student = require('../model/Student');
 
@@ -12,7 +12,7 @@ studentRoute.route('/add-student').post((req, res, next) => {
       return next(error)
     } else {
       res.json(data)
-    }
+    } 
   })
 });
 
@@ -26,6 +26,9 @@ studentRoute.route('/').get((req, res) => {
     }
   })
 })
+
+//get All data 
+//studentRoute.route('/').get(studentController.getdata);
 
 // Get single student
 studentRoute.route('/read-student/:id').get((req, res) => {
