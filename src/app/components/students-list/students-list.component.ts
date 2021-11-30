@@ -17,8 +17,8 @@ export class StudentsListComponent implements OnInit {
   displayedColumns: string[] = ['_id', 'student_name', 'student_email', 'section', 'action'];
 
   constructor(private studentApi: ApiService) {
-    this.studentApi.GetStudents().subscribe(data => {
-      this.StudentData = data;
+    this.studentApi.GetStudents().subscribe((res:any) => {
+      this.StudentData = res.data;
       this.dataSource = new MatTableDataSource<Student>(this.StudentData);
       setTimeout(() => {
         this.dataSource.paginator = this.paginator;

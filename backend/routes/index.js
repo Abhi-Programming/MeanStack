@@ -1,15 +1,15 @@
 module.exports = app => {
     try {
 
-        app.get('/', (req, res) => {
+        app.get('/api', (req, res) => {
             res.status(200).send("Welcome to Adventures");
         });
 
-        app.post('/', (req, res) => {
+        app.post('/api', (req, res) => {
             res.status(200).send("Welcome to Adventures");
         });
 
-        app.use("/student", require('./student.route'));
+        app.use("/api/student", require('./student.route'));
 
 
     } catch (error) {

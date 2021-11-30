@@ -5,45 +5,53 @@ const studentController = new (require('../controllers/student'))();
 // Student model
 let Student = require('../model/Student');
 
-// Add Student
-studentRoute.route('/add-student').post((req, res, next) => {
-  Student.create(req.body, (error, data) => {
-    if (error) {
-      return next(error)
-    } else {
-      res.json(data)
-    } 
-  })
-});
 
-// Get all student
-studentRoute.route('/').get((req, res) => {
-  Student.find((error, data) => {
-    if (error) {
-      return next(error)
-    } else {
-      res.json(data)
-    }
-  })
-})
 
 //get All data 
-//studentRoute.route('/').get(studentController.getdata);
+studentRoute.route('/list').get(studentController.getStudents);
+
+// Add Student
+studentRoute.route('/add').post(studentController.addStudent)
 
 // Get single student
-studentRoute.route('/read-student/:id').get((req, res) => {
-  Student.findById(req.params.id, (error, data) => {
-    if (error) {
-      return next(error)
-    } else {
-      res.json(data)
-    }
-  })
-})
+studentRoute.route('/detail/:id').get(studentController.getDeatil)
+
+
+// studentRoute.route('/add-student').post((req, res, next) => {
+//   Student.create(req.body, (error, data) => {
+//     if (error) {
+//       return next(error)
+//     } else {
+//       res.json(data)
+//     } 
+//   })
+// });
+
+// // Get all student
+// studentRoute.route('/').get((req, res) => {
+//   Student.find((error, data) => {
+//     if (error) {
+//       return next(error)
+//     } else {
+//       res.json(data)
+//     }
+//   })
+// })
+
+// // Get single student
+// studentRoute.route('/detail/:id').get((req, res) => {
+//   Student.findById(req.params.id, (error, data) => {
+//     if (error) {
+//       return next(error)
+//     } else {
+//       res.json(data)
+//     }
+//   })
+// })
 
 
 // Update student
-studentRoute.route('/update-student/:id').put((req, res, next) => {
+studentRoute.route('/update/:id').put((req, res, next) => {
   Student.findByIdAndUpdate(req.params.id, {
     $set: req.body
   }, (error, data) => {
@@ -58,7 +66,7 @@ studentRoute.route('/update-student/:id').put((req, res, next) => {
 })
 
 // Delete student
-studentRoute.route('/delete-student/:id').delete((req, res, next) => {
+studentRoute.route('/delete/:id').delete((req, res, next) => {
   Student.findByIdAndRemove(req.params.id, (error, data) => {
     if (error) {
       return next(error);

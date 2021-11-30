@@ -39,16 +39,17 @@ export class EditStudentComponent implements OnInit {
     private studentApi: ApiService
   ) { 
     var id = this.actRoute.snapshot.paramMap.get('id');
-    this.studentApi.GetStudent(id).subscribe(data => {
-      console.log(data.subjects)
-      this.subjectArray = data.subjects;
+    this.studentApi.GetStudent(id).subscribe((res:any) => {
+      debugger
+      console.log(res.data.subjects)
+      this.subjectArray = res.data.subjects;
       this.studentForm = this.fb.group({
-        student_name: [data.student_name, [Validators.required]],
-        student_email: [data.student_email, [Validators.required]],
-        section: [data.section, [Validators.required]],
-        subjects: [data.subjects],
-        dob: [data.dob, [Validators.required]],
-        gender: [data.gender]
+        student_name: [res.data.student_name, [Validators.required]],
+        student_email: [res.data.student_email, [Validators.required]],
+        section: [res.data.section, [Validators.required]],
+        subjects: [res.data.subjects],
+        dob: [res.data.dob, [Validators.required]],
+        gender: [res.data.gender]
       })      
     })    
   }
