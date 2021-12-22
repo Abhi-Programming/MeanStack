@@ -11,6 +11,7 @@ module.exports = app => {
 
         app.use("/api/student", require('./student.route'));
 
+        app.use("/api/auth", require('./auth.route'))
 
     } catch (error) {
         console.log('Error: ', error);

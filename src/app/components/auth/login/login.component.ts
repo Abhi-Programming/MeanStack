@@ -75,12 +75,18 @@ export class LoginComponent implements OnInit {
 
   /* Submit book */
   submitSignUpForm() {
+    debugger
     if (this.SignUpForm.valid) {
       this.authapi.signUp(this.SignUpForm.value).subscribe(res => {
         debugger
         this.ngZone.run(() => this.router.navigateByUrl('/students-list'))
       });
     }
+  }
+
+
+  restrictSpace(){
+    
   }
 
 }

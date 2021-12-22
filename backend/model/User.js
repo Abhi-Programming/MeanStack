@@ -6,9 +6,6 @@ let User = new Schema({
     user_name: {
         type: String
     },
-    user_fullname: {
-        type: String
-    },
     user_email: {
         type: String
     },
@@ -18,14 +15,14 @@ let User = new Schema({
     password: {
         type: String
     },
-    gender: {
-        type: String
-    },
-    dob: {
-        type: Date
+    roles:
+    {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Role"
     }
+
 }, {
-    collection: 'Users'
+    collection: 'User'
 })
 
 module.exports = mongoose.model('User', User)
