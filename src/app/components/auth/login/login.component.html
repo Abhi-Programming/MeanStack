@@ -98,7 +98,7 @@
         </div>
         <!-- Form -->
         <div class="inner-wrapper text-center pb-1">
-            <form [formGroup]="SignInForm" (ngSubmit)="submitSignUpForm()">
+            <form [formGroup]="SignInForm" (ngSubmit)="submitSignInForm()">
                 <!-- Left block -->
                 <mat-card class="w-75">
                     <div class="controlers-wrapper">
@@ -127,7 +127,7 @@
         <mat-card class="text-center">
             <div class="full-wrapper button-wrapper">
                 <div class="button-wrapper">
-                    <button mat-raised-button color="primary">Let's Go...</button>
+                    <button mat-raised-button type="submit" (click)="submitSignInForm()" color="primary">Let's Go...</button>
                     <button mat-raised-button (click)="signinup()">Sign Up</button>
                 </div>
             </div>

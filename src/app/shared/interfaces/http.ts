@@ -7,3 +7,9 @@ export interface signUp {
     gender: string;
     dob:Date
 }
+
+export interface signIn{
+    user_name: string;
+    password: string;
+    
+}

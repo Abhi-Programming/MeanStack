@@ -3,7 +3,7 @@ let User = require('../model/User');
 checkDuplicateUsernameOrEmail = (req, res, next) => {
     // Username
     User.findOne({
-      username: req.body.username
+      username: req.body.user_name
     }).exec((err, user) => {
       if (err) {
         res.status(500).send({ message: err });

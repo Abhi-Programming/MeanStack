@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild, NgZone } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { ApiService } from './../../../shared/api.service';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { FormGroup, FormBuilder, Validators, FormArray } from "@angular/forms";
 import { AuthApiService } from 'src/app/shared/auth-api.service';
 
 
@@ -19,7 +19,7 @@ export interface Subject {
 export class LoginComponent implements OnInit {
   SignUpForm!: FormGroup;
   SignInForm!: FormGroup;
-  signIn:boolean = true;
+  signIn: boolean = true;
   SectioinArray: any = ['A', 'B', 'C', 'D', 'E'];
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
     public fb: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private authapi:AuthApiService
+    private authapi: AuthApiService
   ) { }
 
   /* Reactive book form */
@@ -41,7 +41,10 @@ export class LoginComponent implements OnInit {
       user_phone: ['', [Validators.required]],
       password: ['', Validators.required],
       dob: ['', [Validators.required]],
-      gender: ['Male']
+      gender: ['Male'],
+      roles: this.fb.array([{
+        roleName: 'user'
+      }])
     })
 
     this.SignInForm = this.fb.group({
@@ -50,26 +53,26 @@ export class LoginComponent implements OnInit {
     })
   }
 
- 
+
 
   /* Date */
-  formatDate(e:any) {
+  formatDate(e: any) {
     var convertDate = new Date(e.target.value).toISOString().substring(0, 10);
     this.SignUpForm.get('dob')?.setValue(convertDate, {
       onlyself: true
     })
 
     //this.SignUpForm.get("dob").setValue(convertDate);
-  }  
+  }
 
   /* Get errors */
   public handleError = (controlName: string, errorName: string) => {
     return this.SignUpForm.controls[controlName].hasError(errorName);
-  }  
+  }
 
 
   //toggel Signin signup
-  signinup(){
+  signinup() {
     this.signIn = !this.signIn
   }
 
@@ -85,8 +88,20 @@ export class LoginComponent implements OnInit {
   }
 
 
-  restrictSpace(){
-    
+  /* signin */
+  submitSignInForm() {
+    debugger
+    if (this.SignInForm.valid) {
+      this.authapi.signIn(this.SignInForm.value).subscribe(res => {
+        debugger
+        this.ngZone.run(() => this.router.navigateByUrl('/students-list'))
+      });
+    }
+  }
+
+
+  restrictSpace() {
+
   }
 
 }
